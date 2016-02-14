@@ -1,0 +1,1210 @@
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+recognized 'normal' (-1) as variant normal
+shuffleOpenings = 0
+resolved -adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1 at pixel size 30
+  to -adobe-helvetica-bold-r-normal--34-240-100-100-p-182-iso8859-1
+resolved -adobe-helvetica-bold-r-normal--11-80-100-100-p-60-iso8859-1 at pixel size 11
+  to -adobe-helvetica-bold-r-normal--11-80-100-100-p-60-iso8859-1
+resolved -adobe-helvetica-medium-r-normal--11-80-100-100-p-56-iso8859-1 at pixel size 12
+  to -adobe-helvetica-medium-r-normal--11-80-100-100-p-56-iso8859-1
+xboard 4.5.3a + chessica
+Reset(1, 0) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+112 >first : xboard
+protover 2
+shuffleOpenings = 0
+126 <first : 
+127 <first : feature done=0
+127 >first : accepted done
+127 <first : feature debug=1
+127 >first : accepted debug
+127 <first : feature myname="Chessica"
+127 >first : accepted myname
+127 <first : feature sigterm=0
+127 >first : accepted sigterm
+127 <first : feature sigint=0
+127 >first : accepted sigint
+127 <first : feature done=1
+127 >first : accepted done
+128 >first : new
+random
+128 >first : level 40 5 0
+128 >first : post
+128 >first : hard
+128 <first : # ACCEPTED: hooray!
+128 <first : # ACCEPTED: hooray!
+128 <first : # ACCEPTED: hooray!
+128 <first : # ACCEPTED: hooray!
+128 <first : # ACCEPTED: hooray!
+128 <first : # ACCEPTED: hooray!
+130 <first : 1 20 0 7 Na3  
+130 <first : 2 59 0 0 Na3  a6  
+130 <first : 3 583 0 0 Na3  a6  Rb1  
+132 <first : 4 2335 0 0 Na3  a6  Rb1  a5  
+169 <first : 5 41397 0 0 b3  a6  Bb2  a5  Bg7  
+674 <first : 6 671830 0 0 b3  b6  Bb2  Bb7  Na3  Bg2  
+813 <first : 7 1237804 0 0 b3  b6  Bb2  Bb7  Na3  b5  Bg7  
+1708 <first : 8 5718822 0 0 b3  b6  Bb2  Bb7  Na3  a6  Rb1  Bg2  
+5783 <first : 9 22495319 0 0 b3  b6  Bb2  Bb7  Na3  a6  Rb1  a5  Bg7  
+7 0 4 7 0 4 Legality test? e2e4
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=0 (4,1)-(4,3) -
+7 0 4 7 0 4 Legality test? e2e4
+movetype=21, promochar=0=-
+MateTest: K=1, my=16, his=16
+move: e2e4
+, parse: e4 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=1 bmm=0 ep=-4, reps=6
+1 ep=-3
+0 ep=-4
+nps: w=-1, b=-1
+nps: w=-1, b=-1
+time odds: 1.000000 1.000000 
+21895 >first : time 30000
+21895 >first : otim 30000
+book hit = (NULL)
+21895 >first : e2e4
+21899 <first : 10 107929925 0 6397360 b3  b6  Bb2  Bb7  Na3  a6  Rb1  a5  Ra1  Bg2  
+21936 <first : 1 20 0 -65536 b6  Na3  Bb7  Rb1  Be4  
+21936 <first : 2 98 0 0 b6  Na3  Bb7  Rb1  Be4  
+21936 <first : 3 877 0 0 b6  Na3  Bb7  Rb1  Be4  
+21941 <first : 4 16781 0 0 b6  Qf3  Bb7  Qf7+  Kf7  
+21954 <first : 5 67859 0 0 b6  Qf3  Bb7  Na3  Be4  
+22066 <first : 6 451197 0 0 b6  Qf3  Bb7  Na3  a6  Ba6  
+22279 <first : 7 1509329 0 0 b6  Qf3  Bb7  Na3  a6  Rb1  Be4  
+25577 <first : 8 14212434 0 0 b6  Qf3  Bb7  Na3  a6  Rb1  a5  Qf7+  
+31936 <first : 9 44593889 0 6397368 b6  Qf3  Bb7  Na3  a6  Rb1  a5  Ra1  Be4  
+31954 <first : move b7b6
+machine move 1, castling = 7 0 4 7 0 4
+7 0 4 7 0 4 Legality test? b7b6
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=22 (1,6)-(1,5) -
+7 0 4 7 0 4 Legality test? b7b6
+movetype=21, promochar=0=-
+MateTest: K=1, my=16, his=16
+move: b7b6
+, parse: b6 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=2 bmm=0 ep=-4, reps=6
+2 ep=-3
+1 ep=-3
+0 ep=-4
+AnimateMove: piece 22 slides from 1,6 to 1,5 
+32031 <first : 1 59 0 0 Qf3  Bb7  Na3  a6  Rb1  a5  Ra1  Be4  
+32031 <first : 2 175 0 0 Qf3  Bb7  Na3  a6  Rb1  a5  Ra1  Be4  
+32031 <first : 3 5276 0 0 Qf3  Bb7  Qf7+  Kf7  Na3  
+32031 <first : 4 25579 0 0 Qf3  Bb7  Na3  Be4  Qe4  
+32047 <first : 5 363603 0 0 Qf3  Bb7  Na3  a6  Ba6  
+32784 <first : 6 1373030 0 0 Qf3  Bb7  Na3  a6  Rb1  Be4  
+36347 <first : 7 15072669 0 0 Qf3  Bb7  Na3  a6  Rb1  a5  Qf7+  
+44481 <first : 8 50396923 0 0 Qf3  Bb7  Na3  a6  Rb1  a5  Ra1  Be4  
+7 0 4 7 0 4 Legality test? g1f3
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=1 (6,0)-(5,2) -
+MateTest: K=1, my=16, his=16
+move: g1f3
+, parse: Nf3 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=3 bmm=0 ep=-4, reps=6
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+time odds: 1.000000 1.000000 
+56171 >first : time 28993
+56171 >first : otim 27578
+book hit = (NULL)
+56171 >first : g1f3
+56178 <first : 9 95983309 0 18473321 Qf3  Bb7  Na3  a6  Rb1  a5  Ra1  a4  Qf7+  
+56342 <first : 1 38 0 -4243456 Bb7  Na3  Be4  Rb1  Bd5  
+56342 <first : 2 184 0 0 Bb7  Na3  Be4  Rb1  Bd5  
+56343 <first : 3 1820 0 0 Bb7  Na3  Be4  Rb1  Bd5  
+56354 <first : 4 44415 0 0 Ba6  Ba6  Na6  Na3  
+56367 <first : 5 95053 0 0 Bb7  Ng5  a6  Na3  Be4  Ne4  
+56810 <first : 6 1632861 0 0 Bb7  Ng5  a6  Na3  a5  Nf7  
+57344 <first : 7 4233750 0 0 Bb7  Nc3  a5  Rb1  a4  Ra1  Be4  
+66281 <first : 8 38956758 0 -2138371280 Bb7  Nc3  a5  Bc4  a4  Rb1  a3  bxa3  
+66379 <first : move c8b7
+machine move 3, castling = 7 0 4 7 0 4
+7 0 4 7 0 4 Legality test? c8b7
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=24 (2,7)-(1,6) -
+MateTest: K=1, my=16, his=16
+move: c8b7
+, parse: Bb7 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=4 bmm=0 ep=-4, reps=6
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+AnimateMove: piece 24 slides from 2,7 to 1,6 
+66462 <first : 1 109 0 0 Nc3  a5  Bc4  a4  Rb1  a3  bxa3  
+66462 <first : 2 303 0 0 Nc3  Be4  Ne4  b5  Rb1  
+66462 <first : 3 12754 0 0 Ng5  h6  Nf7  Kf7  Na3  
+66462 <first : 4 32945 0 0 Ng5  h6  Nh3  Be4  Na3  
+66556 <first : 5 668035 0 0 Ng5  h6  Qh5  g6  Nf7  
+66927 <first : 6 1891091 0 0 Nc3  a5  Bc4  a4  Rb1  Be4  
+74885 <first : 7 31569540 0 0 Nc3  a5  Bc4  a4  Rb1  a3  bxa3  
+86710 <first : 8 76122841 0 0 Nc3  a5  Bc4  e6  Nd4  a4  Rb1  Be4  
+7 0 4 7 0 4 Legality test? b1c3
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=1 (1,0)-(2,2) -
+MateTest: K=1, my=16, his=16
+move: b1c3
+, parse: Nc3 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=5 bmm=0 ep=-4, reps=6
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+time odds: 1.000000 1.000000 
+139408 >first : time 27972
+139408 >first : otim 20275
+book hit = (NULL)
+139408 >first : b1c3
+139417 <first : 9 287620469 0 6397376 Nc3  a5  Bc4  e6  Qe2  Qf6  Rb1  a4  Na4  
+139606 <first : 1 56 0 0 Be4  Ne4  b5  Rb1  b4  
+139606 <first : 2 344 0 0 a5  Bc4  e6  Qe2  Qf6  Rb1  a4  Na4  
+139607 <first : 3 4328 0 0 a5  Bc4  Be4  Ne4  a4  
+139613 <first : 4 24041 0 0 Ba6  Ba6  Na6  Rb1  
+139647 <first : 5 190824 0 0 a5  Bc4  e6  Qe2  Be4  
+141589 <first : 6 3484968 0 0 a5  Bc4  e6  Qe2  Qf6  Be6  
+143589 <first : 7 11174275 0 0 a5  Bc4  e6  Nd4  Bb4  Na4  Bd2+  
+149607 <first : 8 35494297 0 30051241 a5  Bc4  e6  Qe2  Qf6  Rb1  a4  Na4  
+149859 <first : move a7a5
+machine move 5, castling = 7 0 4 7 0 4
+7 0 4 7 0 4 Legality test? a7a5
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=22 (0,6)-(0,4) -
+7 0 4 7 0 4 Legality test? a7a5
+movetype=21, promochar=0=-
+MateTest: K=1, my=16, his=16
+move: a7a5
+, parse: a5 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=6 bmm=0 ep=-4, reps=6
+6 ep=-3
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+AnimateMove: piece 22 slides from 0,6 to 0,4 
+149937 <first : 1 88 0 0 Bc4  e6  Qe2  Qf6  Rb1  a4  Na4  
+149937 <first : 2 354 0 0 Bc4  Be4  Ne4  a4  Rb1  
+149937 <first : 3 15140 0 0 Bc4  e6  Be6  dxe6  Rb1  
+149937 <first : 4 48007 0 0 Bc4  e6  Qe2  Be4  Qe4  
+150068 <first : 5 774507 0 0 Bc4  e6  Qe2  Qf6  Be6  
+150669 <first : 6 3116805 0 0 Bc4  e6  Nd4  Bb4  Na4  Be4  Nb6  
+157074 <first : 7 30588425 0 0 Bc4  e6  Qe2  Qf6  Rb1  a4  Na4  
+183864 <first : 8 152745155 0 0 Bc4  e6  Qe2  Qf6  Nb5  Qd8  Rb1  Be4  
+7 0 4 7 0 4 Legality test? f1b5
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=2 (5,0)-(1,4) -
+MateTest: K=1, my=16, his=16
+move: f1b5
+, parse: Bb5 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=7 bmm=0 ep=-4, reps=6
+7 ep=-4
+6 ep=-3
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+time odds: 1.000000 1.000000 
+221011 >first : time 26927
+221011 >first : otim 13160
+book hit = (NULL)
+221011 >first : f1b5
+221013 <first : 9 305833952 0 6397384 Bc4  e6  Qe2  Qf6  Nb5  Qd8  Rb1  a4  Be6  
+221393 <first : 1 28 0 2143256608 Be4  Ne4  a4  
+221393 <first : 2 1062 0 0 Bc8  Bd7+  Nd7  Rb1  a4  
+221394 <first : 3 2536 0 0 a4  Rb1  Be4  Ra1  
+221409 <first : 4 56235 0 0 Bc8  Rb1  Bb7  Bd7+  Nd7  
+221441 <first : 5 176503 0 0 Bc8  Rb1  Bb7  Ra1  Be4  Ne4  
+221885 <first : 6 1595568 0 0 Bc8  Rb1  Bb7  Ra1  a4  Na4  
+223283 <first : 7 8215251 0 0 Bc8  Rb1  Bb7  Ra1  a4  Rb1  Be4  
+231393 <first : 8 40670231 0 68418119 Bc8  Rb1  Bb7  Ra1  Bc8  Rb1  a4  Na4  
+231495 <first : move b7c8
+machine move 7, castling = 7 0 4 7 0 4
+7 0 4 7 0 4 Legality test? b7c8
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=24 (1,6)-(2,7) -
+MateTest: K=1, my=16, his=16
+move: b7c8
+, parse: Bc8 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=8 bmm=0 ep=-4, reps=6
+8 ep=-4
+7 ep=-4
+6 ep=-3
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+AnimateMove: piece 24 slides from 1,6 to 2,7 
+231572 <first : 1 171 0 0 Bd7+  Nd7  Rb1  a4  Ra1  
+231572 <first : 2 438 0 0 Rb1  Bb7  Ra1  Bc8  Rb1  a4  Na4  
+231572 <first : 3 20509 0 0 Rb1  Bb7  Bd7+  Nd7  Ra1  
+231572 <first : 4 80786 0 0 Rb1  Bb7  Ra1  Be4  Ne4  
+232062 <first : 5 1951122 0 0 Rb1  Bb7  Ra1  Bc8  Bd7+  
+275903 <first : 6 8248126 0 0 Rb1  Bb7  Ra1  a4  Rb1  Be4  
+7 0 4 7 0 4 Legality test? d2d3
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=0 (3,1)-(3,2) -
+7 0 4 7 0 4 Legality test? d2d3
+movetype=21, promochar=0=-
+MateTest: K=1, my=16, his=16
+move: d2d3
+, parse: d3 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=9 bmm=0 ep=-4, reps=6
+9 ep=-3
+8 ep=-4
+7 ep=-4
+6 ep=-3
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+time odds: 1.000000 1.000000 
+299628 >first : time 25878
+299628 >first : otim 6354
+book hit = (NULL)
+299628 >first : d2d3
+300878 <first : 7 10672820 0 6397392 Rb1  Bb7  Ra1  Bc8  Rb1  a4  Na4  
+504813 <first : 1 34 0 2143272960 Bb7  Rb1  a4  Na4  Ra4  
+505036 <first : 2 1240 0 0 Bb7  Bd7+  Nd7  Rb1  a4  
+505036 <first : 3 2919 0 0 Bb7  Rb1  Be4  Ne4  a4  
+511439 <first : 4 55408 0 0 Bb7  Rb1  a4  Na4  Ra4  
+513091 <first : 5 172693 0 0 Bb7  Rb1  a4  Ra1  Be4  
+514719 <first : 6 1854773 0 6397400 Bb7  Rb1  Bc8  Ra1  a4  Na4  
+514747 <first : move c8b7
+machine move 9, castling = 7 0 4 7 0 4
+7 0 4 7 0 4 Legality test? c8b7
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+CoordsToAlgebraic, piece=24 (2,7)-(1,6) -
+MateTest: K=1, my=16, his=16
+move: c8b7
+, parse: Bb7 (
+)
+MateTest: K=1, my=16, his=16
+repeat test fmm=10 bmm=0 ep=-4, reps=6
+10 ep=-4
+9 ep=-3
+8 ep=-4
+7 ep=-4
+6 ep=-3
+5 ep=-4
+4 ep=-4
+3 ep=-4
+2 ep=-3
+1 ep=-3
+0 ep=-4
+AnimateMove: piece 24 slides from 2,7 to 1,6 
+518650 <first : 1 191 0 0 Bd7+  Nd7  Rb1  a4  Ra1  
+518650 <first : 2 722 0 0 Rb1  Be4  Ne4  a4  Ra1  
+518650 <first : 3 47485 0 0 Rb1  Bc8  Bd7+  Nd7  Ra1  
+518650 <first : 4 138249 0 0 Rb1  a4  Ra1  Be4  Ne4  
+560003 <first : 5 3266018 0 0 Rb1  Bc8  Ra1  a4  Na4  
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+mps=40 tc=300000 inc=0
+TC string = ':40/300'
+GameEnds(28, xboard exit, 2)
+1062335 >first : result * {xboard exit}
+1062547 >first : force
+1062845 >first : quit

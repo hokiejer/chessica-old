@@ -1,0 +1,28 @@
+break ResetTree::AlphaBetaLeaveNodesSaveBest
+run
+c (20 times to get through depth=1)
+x/100xw this
+
+Breakpoint 2, ResetTree::AlphaBetaLeaveNodesSaveBest (this=0x685f20,
+    LeaveDepth=5, Depth=1, Ply=1, Min=125000000, Max=-125000000, ThreadID=2,
+    NodeCount=0x61b270) at ab.cpp:175
+175     {
+(gdb) c
+Continuing.
+
+Breakpoint 2, ResetTree::AlphaBetaLeaveNodesSaveBest (this=0x685e20,
+    LeaveDepth=5, Depth=0, Ply=2, Min=125000000, Max=-125000000, ThreadID=2,
+    NodeCount=0x61b270) at ab.cpp:175
+175     {
+
+0x685e20 is the top level node!  Why on earth is the child its own grandparent???
+
+Rerun, inspect the first child's child pointer, and then try trapping on anyone who writes the child pointer for the first child.
+
+watch *0x685fd0
+
+this=0x685e20
+this->Children.First = 0x685f20 (0x685ed0)
+
+Newguy=0x685e20
+
