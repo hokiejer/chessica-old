@@ -88,6 +88,9 @@ int Reset::AddNextBlackMove(Reset *MyChild, unsigned long long int *PieceBeingMo
 }
 
 
+//
+//PERFORMANCE PATH
+//
 unsigned long long int Reset::UpdateMoveData(int Target)
 {
   MoveData = CurrentPiece + Target;
