@@ -398,7 +398,7 @@ void Reset::PrintReset()
     printf(" Black to move next.");
   }
   printf("\n");
-  printf("Board score: %f (%d)  Hash Value: %d\n",Score,ScoreDepth,HashValue);
+  printf("Board score: %d (%d)  Hash Value: %d\n",Score,ScoreDepth,HashValue);
   if (WhiteCastleQ) printf("Q");
   if (WhiteCastleK) printf("K");
   if (BlackCastleQ) printf("q");
@@ -433,7 +433,8 @@ void ResetTree::PrintChildren()
 
 void ClearScreen()
 {
-  CLEAR_SCREEN;
+  int retval;
+  retval = CLEAR_SCREEN;
 }
 
 
