@@ -359,7 +359,7 @@ int ResetTree::IterativeAlphaBetaLeaveNodesSaveBest(int Depth, int LeaveDepth, i
 
   CeaseProcessing = 0;
 
-  printf("This == %x\n",this);
+  printf("This == %llu\n",(unsigned long long int) this);
   for (i=1;i<=Depth;i++)
   {
     if (!CeaseProcessing)
@@ -369,7 +369,7 @@ int ResetTree::IterativeAlphaBetaLeaveNodesSaveBest(int Depth, int LeaveDepth, i
       if (ShowThinking)
       {
         IOLock.Obtain();
-        printf("%d %d 0 %d ",i,retval / 10,*MoveCount);
+        printf("%d %d 0 %lld ",i,retval / 10,*MoveCount);
         printptr = Children.First;
         while (printptr)
         {
@@ -412,7 +412,7 @@ int ResetTree::ParallelIterativeAlphaBetaLeaveNodesSaveBest(int Depth, int Leave
         {
           //Find and print best score
           IOLock.Obtain();
-          printf("%d %d 0 %d ",i,retval / 10,*MoveCount);
+          printf("%d %d 0 %lld ",i,retval / 10,*MoveCount);
           printptr = Children.First;
           while (printptr)
           {
@@ -495,7 +495,7 @@ int Game::ParallelIterativeAlphaBetaLeaveNodesSaveBest(int ThreadID)
           IOLock.Obtain();
           
           //print best score - this needs to be a resettree routine
-          printf("%d %d 0 %d ",i,ThreadData[ThreadID].Score / 10,ThreadData[ThreadID].MoveCount);
+          printf("%d %d 0 %lld ",i,ThreadData[ThreadID].Score / 10,ThreadData[ThreadID].MoveCount);
           ThreadData[ThreadID].Root->PrintBestMoveLine();
           IOLock.Release();
         }
