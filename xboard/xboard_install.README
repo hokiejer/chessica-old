@@ -1,0 +1,21 @@
+CONFIGURING XBOARD
+
+Packages installed:
+
+xorg-x11-proto-devel
+xorg-xll-xtrans-devel (not sure if this was needed)
+libXt-devel
+libXaw
+libXaw-devel
+xorg-x11-fonts-misc (needed post-install)
+xorg-x11-fonts-ISO8859-1-100dpi
+
+Configured installation with:
+
+cd xboard*
+./configure --x-includes=/usr/include --x-libraries=/usr/lib64 --enable-zippy
+make
+make check
+make install
+
+

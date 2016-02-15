@@ -1,0 +1,47 @@
+Here's where I stand:
+
+Take an initial serial pass on the set of available moves.  Number them 1 to numthreads (1 2 3 1 2 3 ...).  Then each processor runs serial AB on its subset.  Then you merge results.
+
+I think I can get rid of bTo and bFrom with negligible impact
+I need to move some of the unique Reset characteristics up front.
+
+What to keep and what to omit from the tree:
+- I still don't know if ABSaveBest is worth keeping.
+- I should track the number of times a node has been considered in my AB routine.  If it has not been considered more than once, I should prune all of its children at some point.
+
+
+PGN:
+chess.com offers a bunch of huge PGN files.  If I can devise a way to read and analyze the multiple games therein, I will have some insight into how to optimally order some performance path routines.
+
+ponder:
+If ponder is off, I need to generate the first ply of moves for checking.
+Also, quit needs to be fixed when ponder is off
+
+xboard integration works to some extent.  The following is missing:
+- Pawn promotion does not work for either computer or opponent
+- Limited command support.  Need to read the doc more thoroughly and figure out where the gaps are
+  - Probably need a file output from chessica to document xboard-engine talks
+
+I want to improve my A-B pruning:
+- Past ply 5 (or maybe 4) keep only the best move.
+  - This means CurrentNode in these cases will have to be initialized for new move generation after each iteration
+  - It will also have to (probably) ignore duplicate moves with this new generation
+
+Engine still needs:
+- To understand the 3 board positions rule
+- 50 move rule implemented but not tested (FEN needs to understand this)
+
+
+Spawn a thread to handle chess thinking.  Then the main thread will handle I/O.
+- Create an I/O lock.  You must hold the lock to speak to xboard.
+
+
+
+e2e4 : e4  b6
+f1b5 : Bb5 Bb7
+d2d3 : d3  c6
+b5a4 : Ba4 b5
+a4b3 : Bb3 Qa5+
+c1d2 : Bd2 Qb6
+d2e3 : Be3 Qa5+
+d1d2 : Qd2 Qa6???
