@@ -28,7 +28,7 @@ int VerifyHighEndMoveScore(int ply, int ExpectedScore, long long int TotalMoves,
   ABIPTimer.Reset();
   ABIPScore = Root->IterativeAlphaBetaInPlace(ply,5,&ABIPMoveCount);
   ABIPTime = ABIPTimer.ElapsedTime();
-  printf("Ply=%d, IterativeAB In Place[5]: %d (savings=%2.3f\%), Score=%d, Time=%d", ply, ABIPMoveCount,((float) (TotalMoves-ABIPMoveCount) * 100.0) / ((float) TotalMoves),ABIPScore,ABIPTime);
+  printf("Ply=%d, IterativeAB In Place[5]: %lld (savings=%2.3f%%), Score=%d, Time=%d", ply, ABIPMoveCount,((float) (TotalMoves-ABIPMoveCount) * 100.0) / ((float) TotalMoves),ABIPScore,ABIPTime);
   Root->DeleteTree(RUNS_SERIALLY);
 
   if (abs(ABIPScore - ExpectedScore) > 1)
@@ -46,7 +46,7 @@ int VerifyHighEndMoveScore(int ply, int ExpectedScore, long long int TotalMoves,
   ABLNSBTimer.Reset();
   ABLNSBScore = Root->IterativeAlphaBetaLeaveNodesSaveBest(ply,5,0,0,&ABLNSBMoveCount);
   ABLNSBTime = ABLNSBTimer.ElapsedTime();
-  printf("Ply=%d, IterativeABSaveBest LeaveNodes[5]: %d (savings=%2.3f\%), Score=%d, Time=%d", ply, ABLNSBMoveCount,((float) (TotalMoves-ABLNSBMoveCount) * 100.0) / ((float) TotalMoves),ABLNSBScore,ABLNSBTime);
+  printf("Ply=%d, IterativeABSaveBest LeaveNodes[5]: %lld (savings=%2.3f%%), Score=%d, Time=%d", ply, ABLNSBMoveCount,((float) (TotalMoves-ABLNSBMoveCount) * 100.0) / ((float) TotalMoves),ABLNSBScore,ABLNSBTime);
   Root->DeleteTree(RUNS_SERIALLY);
 
   if (abs(ABLNSBScore - ExpectedScore) > 1)
@@ -85,7 +85,7 @@ int Game::VerifyIndividualMoveScore(char SearchRoutineText[], int ExpectedScore,
   WaitForMoveSearchToEnd();
   myTime = myTimer.ElapsedTime();
 
-  printf("%d (savings=%2.3f\%), Score=%d, Time=%d", MoveCount[0],((float) (TotalMoves-MoveCount[0]) * 100.0) / ((float) TotalMoves),SearchScore[0],myTime);
+  printf("%lld (savings=%2.3f%%), Score=%d, Time=%d", MoveCount[0],((float) (TotalMoves-MoveCount[0]) * 100.0) / ((float) TotalMoves),SearchScore[0],myTime);
 
   if (abs(SearchScore[0] - ExpectedScore) > 1)
   {
@@ -178,7 +178,7 @@ int VerifyMoveScore(int ply, int ExpectedScore, long long int TotalMoves, ResetT
   ABTimer.Reset();
   ABScore = Root->SerialAlphaBeta(ply,0,MAX_SCORE,MIN_SCORE,&ABMoveCount);
   ABTime = ABTimer.ElapsedTime();
-  printf("Ply=%d, AB: %d (savings=%2.3f\%), Score=%d, Time=%d", ply, ABMoveCount,((float) (TotalMoves-ABMoveCount) * 100.0) / ((float) TotalMoves),ABScore,ABTime);
+  printf("Ply=%d, AB: %d (savings=%2.3f%%), Score=%d, Time=%d", ply, ABMoveCount,((float) (TotalMoves-ABMoveCount) * 100.0) / ((float) TotalMoves),ABScore,ABTime);
 
   if (abs(ABScore - ExpectedScore) > 1)
   {
@@ -195,7 +195,7 @@ int VerifyMoveScore(int ply, int ExpectedScore, long long int TotalMoves, ResetT
   ABSBTimer.Reset();
   ABSBScore = Root->IterativeAlphaBetaSaveBest(ply,&ABSBMoveCount);
   ABSBTime = ABSBTimer.ElapsedTime();
-  printf("Ply=%d, AB Save Best: %d (savings=%2.3f\%), Score=%d, Time=%d", ply, ABSBMoveCount,((float) (TotalMoves-ABSBMoveCount) * 100.0) / ((float) TotalMoves),ABSBScore,ABSBTime);
+  printf("Ply=%d, AB Save Best: %d (savings=%2.3f%%), Score=%d, Time=%d", ply, ABSBMoveCount,((float) (TotalMoves-ABSBMoveCount) * 100.0) / ((float) TotalMoves),ABSBScore,ABSBTime);
   Root->DeleteTree(RUNS_SERIALLY);
 
   if (abs(ABSBScore - ExpectedScore) > 1)
@@ -215,7 +215,7 @@ int VerifyMoveScore(int ply, int ExpectedScore, long long int TotalMoves, ResetT
     IABTimer.Reset();
     IABScore[i] = Root->IterativeAlphaBeta(i+1,ply,&IABMoveCount[i]);
     IABTime = IABTimer.ElapsedTime();
-    printf("Ply=%d, IterativeAB(%d): %d (savings=%2.3f\%), Score=%d, Time=%d",ply,i+1,IABMoveCount[i],((float) (TotalMoves-IABMoveCount[i]) * 100.0) / ((float) TotalMoves),IABScore[i],IABTime);
+    printf("Ply=%d, IterativeAB(%d): %d (savings=%2.3f%%), Score=%d, Time=%d",ply,i+1,IABMoveCount[i],((float) (TotalMoves-IABMoveCount[i]) * 100.0) / ((float) TotalMoves),IABScore[i],IABTime);
   
     if (abs(IABScore[i] - ExpectedScore) > 1)
     {
@@ -256,7 +256,7 @@ int VerifyMoveGeneration(int ply, long long int Expected, ResetTree *Root, int E
   SerialTimer.Reset();
   SerialScore = Root->SerialMoveTree(ply,0,&SerialMoveCount);
   SerialTime = SerialTimer.ElapsedTime();
-  printf("Expected=%d, Actual=%d, Score=%d, Time=%d",Expected,SerialMoveCount,SerialScore,SerialTime);
+  printf("Expected=%lld, Actual=%lld, Score=%d, Time=%d",Expected,SerialMoveCount,SerialScore,SerialTime);
   if (SerialMoveCount != Expected)
   {
     printf(" ERROR!\n");
@@ -286,7 +286,7 @@ int CompareABvsNaive(int ply, ResetTree *Root)
   myTimer.Reset();
   SerialScore = Root->SerialMoveTree(ply,0,&SerialMoveCount);
 
-  printf("ABMovesSaved: %d (%3.0f), ",SerialMoveCount-ABMoveCount,(float) ABMoveCount / ((float) SerialMoveCount));
+  printf("ABMovesSaved: %lld (%3.0f), ",SerialMoveCount-ABMoveCount,((float) ABMoveCount) / ((float) SerialMoveCount));
   if (ABScore != SerialScore)
   {
     printf(" ERROR!\n");
