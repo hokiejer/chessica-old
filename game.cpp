@@ -13,12 +13,12 @@ Game::Game()	//constructor
   Ponder = 1;
 
   //Set Search algorithm
-  SearchRoutine = &Game::ParallelIterativeAlphaBetaLeaveNodesSaveBest;
-  NumThreads = 3;
+  SearchRoutine = &Game::IterativeAlphaBetaLeaveNodesSaveBest;
+  NumThreads = 1;
 
   //Search parameters
   ABParmlist.Depth = 20;
-  ABParmlist.LeaveDepth = 5;
+  ABParmlist.LeaveDepth = 4;
 }
 
 
@@ -36,7 +36,7 @@ void Game::SetGame(const char * FEN)
 
   if (CurrentBoard->AbortTreeSearch())
   {
-    //printf ("InitGame found a tree search running???\n");
+    printf ("InitGame found a tree search running???\n");
   }
   if (InitialBoard)
   {
@@ -52,7 +52,6 @@ void Game::SetGame(const char * FEN)
 
   //Ensure that first level of moves are generated
   CurrentBoard->GenerateMoves(1,IO_THREAD);
-printf("AB has been called\n");
 }
 
 

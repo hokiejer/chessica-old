@@ -350,6 +350,14 @@ int ResetTree::AlphaBetaLeaveNodesSaveBest(int LeaveDepth, int Depth, int Ply, i
 }
 
 
+int Game::IterativeAlphaBetaLeaveNodesSaveBest(int ThreadID)
+{
+  return (CurrentBoard->IterativeAlphaBetaLeaveNodesSaveBest(ABParmlist.Depth,ABParmlist.LeaveDepth,1,ThreadID,&(MoveCount[MoveNumber])));
+}
+
+
+
+
 int ResetTree::IterativeAlphaBetaLeaveNodesSaveBest(int Depth, int LeaveDepth, int ShowThinking, int ThreadID, long long int *MoveCount)
 {
   int i;
@@ -359,7 +367,6 @@ int ResetTree::IterativeAlphaBetaLeaveNodesSaveBest(int Depth, int LeaveDepth, i
 
   CeaseProcessing = 0;
 
-  printf("This == %llu\n",(unsigned long long int) this);
   for (i=1;i<=Depth;i++)
   {
     if (!CeaseProcessing)
