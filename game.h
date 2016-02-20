@@ -83,6 +83,7 @@ private:
 
   //ab.cpp
   int IterativeAlphaBetaSaveBest(int ThreadID);
+  int IterativeAlphaBetaLeaveNodesSaveBest(int ThreadID);
   int ParallelIterativeAlphaBetaLeaveNodesSaveBest(int ThreadID);
 
   //search.cpp
