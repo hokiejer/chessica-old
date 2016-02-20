@@ -18,7 +18,7 @@ Game::Game()	//constructor
 
   //Search parameters
   ABParmlist.Depth = 20;
-  ABParmlist.LeaveDepth = 5;
+  ABParmlist.LeaveDepth = 4;
 }
 
 
