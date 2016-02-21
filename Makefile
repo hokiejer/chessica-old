@@ -22,7 +22,6 @@ GLOBAL_INCLUDE = chess.h     \
                  constants.h \
                  game.h      \
                  hash.h      \
-                 logger.h    \
                  reset.h     \
                  score.h     \
                  timer.h     \
@@ -41,10 +40,8 @@ OBJFILES = $(OPENINGS) \
            $(OBJDIR)/chess.o     \
            $(OBJDIR)/constants.o \
            $(OBJDIR)/engine.o    \
-           $(OBJDIR)/file.o      \
            $(OBJDIR)/game.o      \
            $(OBJDIR)/hash.o      \
-           $(OBJDIR)/logger.o    \
            $(OBJDIR)/init.o      \
            $(OBJDIR)/io.o        \
            $(OBJDIR)/king.o      \
