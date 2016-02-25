@@ -54,6 +54,7 @@ void Game::MakeMove()
     IOLock.Obtain();
     CurrentBoard->GetMoveText(mybuffer);
     printf("move %s\n",mybuffer);
+    fprintf(logfile,"Computer Making Move %s\n",mybuffer);
     IOLock.Release();
   }
   else 
@@ -74,16 +75,33 @@ void Game::MakeMove()
     if (UserMove[4] == 'q')
       promotion = 4;
     CurrentBoard = CurrentBoard->UseThisMove(fromsquare,tosquare,promotion);
+    fprintf(logfile,"Human has moved\n");
   }
 
   //Generic move stuff
   Ply++;
-  if (CurrentBoard->WhiteToMove());
+  if (CurrentBoard->WhiteToMove())
     MoveNumber++;
   DebugPtr = CurrentBoard;
 
   //Ensure that first level of moves are generated
-  CurrentBoard->GenerateMoves(1,ENGINE_THREAD);
+  //fprintf(logfile,"************************************************\n");
+  //fprintf(logfile,"Move Options before GenerateMoves\n");
+  //fprintf(logfile,"************************************************\n");
+  //CurrentBoard->PrintMoveOptions();
+  //fprintf(logfile,"************************************************\n");
+  //fprintf(logfile,"************************************************\n");
+  //CurrentBoard->GenerateMoves(1,ENGINE_THREAD);
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"MOVES NOW AVAILABLE\n");
+  fprintf(logfile,"************************************************\n");
+  CurrentBoard->PrintMoveOptions();
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fflush(logfile);
   //retval = CurrentBoard->AlphaBetaLeaveNodesSaveBest(1,1,0,MAX_SCORE,MIN_SCORE,0,MoveCount); //$$$ I'm nervous about this thread usage
 
   //$$$ Note that when the computer ponders, these children will be given to threads.
