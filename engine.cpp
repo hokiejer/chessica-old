@@ -83,7 +83,24 @@ void Game::MakeMove()
   DebugPtr = CurrentBoard;
 
   //Ensure that first level of moves are generated
-  CurrentBoard->GenerateMoves(1,ENGINE_THREAD);
+  //fprintf(logfile,"************************************************\n");
+  //fprintf(logfile,"Move Options before GenerateMoves\n");
+  //fprintf(logfile,"************************************************\n");
+  //CurrentBoard->PrintMoveOptions();
+  //fprintf(logfile,"************************************************\n");
+  //fprintf(logfile,"************************************************\n");
+  //CurrentBoard->GenerateMoves(1,ENGINE_THREAD);
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"MOVES NOW AVAILABLE\n");
+  fprintf(logfile,"************************************************\n");
+  CurrentBoard->PrintReset();
+  CurrentBoard->PrintMoveOptions();
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fprintf(logfile,"************************************************\n");
+  fflush(logfile);
   //retval = CurrentBoard->AlphaBetaLeaveNodesSaveBest(1,1,0,MAX_SCORE,MIN_SCORE,0,MoveCount); //$$$ I'm nervous about this thread usage
 
   //$$$ Note that when the computer ponders, these children will be given to threads.
