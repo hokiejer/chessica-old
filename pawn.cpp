@@ -384,7 +384,6 @@ int Reset::GenerateNextWhitePawnPromotion(Reset * Child, unsigned long long int 
     Child->Promotion = 1;
     Child->bPawns &= ~bCurrentPiece;
     if (AddNextWhiteMove(Child,(&Child->bBishops)))
-    if (ValidChild(Child))
     {
       return(TRUE);
     }
