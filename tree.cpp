@@ -296,7 +296,7 @@ void ResetTree::Serialize()
 
   if (retcode = pthread_mutex_lock(&Children.Mutex))
   {
-    printf("LOCKING ERROR!!! %d\n",retcode);
+    fprintf(logfile,"LOCKING ERROR!!! %d\n",retcode);
   }
 }
 
@@ -325,7 +325,7 @@ void ResetTree::Unserialize()
 
   if (retcode = pthread_mutex_unlock(&Children.Mutex))
   {
-    printf("UNLOCKING ERROR!!! %d\n",retcode);
+    fprintf(logfile,"UNLOCKING ERROR!!! %d\n",retcode);
   }
 }
 
@@ -443,16 +443,16 @@ void ResetTree::TreeDiagnostics()
   {
     if (DepthCount[i] > 0)
     {
-      printf("Depth = %d, Nodes = %llu\n",i,DepthCount[i]);
+      fprintf(logfile,"Depth = %d, Nodes = %llu\n",i,DepthCount[i]);
     }
   }
-  printf("TOTAL = %llu\n",TotalCount);
+  fprintf(logfile,"TOTAL = %llu\n",TotalCount);
   i = CountFreeList();
-  printf("Nodes on Freelist: %d\n",i);
-  printf("MEMORY USAGE:\n");
-  printf("=============\n");
-  printf("Freelist: %6.2f MB (%d nodes)\n",((float) (i) * sizeof(ResetTree)) / (1024.0 * 1024.0),i);
-  printf("Tree:     %6.2f MB (%llu nodes)\n",((float) (TotalCount) * sizeof(ResetTree)) / (1024.0 * 1024.0),TotalCount);
-  printf("TOTAL:    %6.2f MB (%llu nodes)\n",((float) (TotalCount + i) * sizeof(ResetTree)) / (1024.0 * 1024.0),TotalCount + i);
+  fprintf(logfile,"Nodes on Freelist: %d\n",i);
+  fprintf(logfile,"MEMORY USAGE:\n");
+  fprintf(logfile,"=============\n");
+  fprintf(logfile,"Freelist: %6.2f MB (%d nodes)\n",((float) (i) * sizeof(ResetTree)) / (1024.0 * 1024.0),i);
+  fprintf(logfile,"Tree:     %6.2f MB (%llu nodes)\n",((float) (TotalCount) * sizeof(ResetTree)) / (1024.0 * 1024.0),TotalCount);
+  fprintf(logfile,"TOTAL:    %6.2f MB (%llu nodes)\n",((float) (TotalCount + i) * sizeof(ResetTree)) / (1024.0 * 1024.0),TotalCount + i);
 }
 

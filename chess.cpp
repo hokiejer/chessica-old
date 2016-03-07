@@ -3,14 +3,14 @@
 //#define TESTMODE
 
 Game MyGame;
-Logger Log;
+FILE *logfile;
 
 int main()
 {
   char temp;
   ResetTree & Root = *new ResetTree;
   
-  Log.Open();
+  logfile = fopen("/home/jrotter/git/chessica/logs/chessica.log","w");
   InitKingStars();
   InitAllAttacks();
   Root.InitCheckFunctionRouters();
@@ -25,6 +25,6 @@ int main()
   MyGame.XboardCommandInterpreter();
 #endif
 
-  Log.Close();
+  fclose(logfile);
   return (0);
 }

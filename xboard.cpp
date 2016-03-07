@@ -46,8 +46,7 @@ void Game::XboardCommandInterpreter()
   while (1)
   {
     scanf("%s",args[0]);
-    sprintf(logstring,"[xboard] %s\n",args[0]);
-    Log.Write(logstring);
+    fprintf(logfile,"[xboard] %s\n",args[0]);
 
     //xboard saying hello
     if (strcmp(args[0],"xboard") == 0)
@@ -67,21 +66,21 @@ void Game::XboardCommandInterpreter()
         //This better be true because I only speak in protocol 4
         IOLock.Obtain();
         printf("feature done=0\n"); //I'm not done yet
-        Log.Write("feature done=0\n");
+        fprintf(logfile,"feature done=0\n");
         printf("feature debug=1\n"); //Let me send comments to xboard
-        Log.Write("feature debug=1\n"); 
+        fprintf(logfile,"feature debug=1\n"); 
         printf("feature setboard=1\n"); //Let xboard set positions with FEN
-        Log.Write("feature setboard=1\n");
+        fprintf(logfile,"feature setboard=1\n");
         printf("feature colors=0\n"); //Disable colors command
-        Log.Write("feature colors=0\n");
+        fprintf(logfile,"feature colors=0\n");
         printf("feature myname=\"Chessica\"\n");
-        Log.Write("feature myname=\"Chessica\"\n");
+        fprintf(logfile,"feature myname=\"Chessica\"\n");
         printf("feature sigterm=0\n");
-        Log.Write("feature sigterm=0\n");
+        fprintf(logfile,"feature sigterm=0\n");
         printf("feature sigint=0\n");
-        Log.Write("feature sigint=0\n");
+        fprintf(logfile,"feature sigint=0\n");
         printf("feature done=1\n"); //Now I'm done
-        Log.Write("feature done=1\n");
+        fprintf(logfile,"feature done=1\n");
         IOLock.Release();
       //}
 
@@ -97,14 +96,14 @@ void Game::XboardCommandInterpreter()
     {
       IOLock.Obtain();
       printf("# ACCEPTED: hooray!\n");
-      Log.Write("# ACCEPTED: hooray!\n");
+      fprintf(logfile,"# ACCEPTED: hooray!\n");
       IOLock.Release();
     }
     if (strcmp(args[0],"rejected") == 0)
     {
       IOLock.Obtain();
       printf("# REJECTED: BOOOOO!\n");
-      Log.Write("# REJECTED: BOOOOO!\n");
+      fprintf(logfile,"# REJECTED: BOOOOO!\n");
       IOLock.Release();
     }
 
@@ -127,7 +126,7 @@ void Game::XboardCommandInterpreter()
       KillEngine();
       //GameCleanup(); $$$ I really need to clean up all of my allocated stuff
       //               $$$ This means the game tree and the freelist
-      Log.Close();
+      fclose(logfile);
       exit(0);
     }
 
@@ -140,7 +139,7 @@ void Game::XboardCommandInterpreter()
       {
         scanf("%s",args[0]);
         sprintf(logstring,"[xboard] %s\n",args[0]);
-        Log.Write(logstring);
+        fprintf(logfile,logstring);
         strcat(mybuffer,args[0]);
       }
       SetGame(mybuffer); //Set the game to the new FEN
@@ -292,7 +291,7 @@ void Game::XboardCommandInterpreter()
         IOLock.Obtain();
         printf("Illegal move: %s\n",args[0]);
         sprintf(logstring,"Illegal move: %s\n",args[0]);
-        Log.Write(logstring);
+        fprintf(logfile,logstring);
         IOLock.Release();
       }
 
