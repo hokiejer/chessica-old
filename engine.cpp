@@ -54,6 +54,7 @@ void Game::MakeMove()
     IOLock.Obtain();
     CurrentBoard->GetMoveText(mybuffer);
     printf("move %s\n",mybuffer);
+    fprintf(logfile,"Computer Making Move %s\n",mybuffer);
     IOLock.Release();
   }
   else 
@@ -74,11 +75,12 @@ void Game::MakeMove()
     if (UserMove[4] == 'q')
       promotion = 4;
     CurrentBoard = CurrentBoard->UseThisMove(fromsquare,tosquare,promotion);
+    fprintf(logfile,"Human has moved\n");
   }
 
   //Generic move stuff
   Ply++;
-  if (CurrentBoard->WhiteToMove());
+  if (CurrentBoard->WhiteToMove())
     MoveNumber++;
   DebugPtr = CurrentBoard;
 
